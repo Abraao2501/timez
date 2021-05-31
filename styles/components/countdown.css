@@ -1,0 +1,9 @@
+p {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 3rem;
+}
+.space {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}

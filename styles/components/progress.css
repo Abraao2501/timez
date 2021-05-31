@@ -1,0 +1,62 @@
+.progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 15rem;
+}
+.progress .container{
+    width: 20rem;
+    height: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.progress .container .status {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--white);
+}
+.progress .container .line {
+    position: absolute;
+    width: 100%;
+    height: .2rem;
+
+    background-color: var(--white);
+}
+button {
+    background: rgb(184, 81, 248);
+    color: var(--white);
+    border-radius: 20px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    height: 3rem;
+
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+}
+button:hover {
+    background: rgba(184, 81, 248, 0.794);
+}
+
+@media(max-width:700px){
+    .progress {
+        height: 80vh;
+    }
+
+}
+@media(max-width:400px){
+    html {
+        font-size: 13px;
+    }
+
+}

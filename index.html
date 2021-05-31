@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4C74AF" />
+
+    <link rel="stylesheet" href="/styles/geral.css" />
+    <link rel="stylesheet" href="/styles/components/main.css" />
+    <link rel="stylesheet" href="/styles/components/img.css" />
+    <link rel="stylesheet" href="/styles/components/cta.css" />
+
+    <title>Timez | Bem vindo(a)!</title>
+  </head>
+  <body>
+    <main>
+      <section class="img">
+        <img src="/images/desktop/time-men.svg" alt="Homem com Relógio" />
+      </section>
+      <section class="cta">
+        <h1>Melhore sua produtividade no trabalho</h1>
+        <button>Próximo</button>
+      </section>
+    </main>
+    <script>
+      //altura da viewport multiplicada por 1%  para obter um valor em VH
+      let vh = window.innerHeight * 0.01;
+
+      //Insere o valor vh como variavel css na raiz do documento
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+      document
+        .querySelector("button")
+        .addEventListener("click", function nextPage() {
+          document.location.href = "/pages/apresentation2.html";
+        });
+    </script>
+  </body>
+</html>

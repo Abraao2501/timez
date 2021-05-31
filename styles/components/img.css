@@ -1,0 +1,26 @@
+.img {
+    margin-left: 8rem;
+    width: 15rem;
+    display: flex;
+}
+@media(max-width:972px){
+    .img {
+        margin-right: 10rem;
+    }
+}
+
+@media(max-width:807px){
+   .img {
+       margin: 0;
+       width: auto;
+       position: absolute;
+   }
+}
+@media(max-width: 486px){
+
+    img {
+        width: 21rem;
+        height: 21rem;
+    }
+
+}
